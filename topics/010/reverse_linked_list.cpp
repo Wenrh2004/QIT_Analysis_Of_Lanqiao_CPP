@@ -33,8 +33,8 @@ struct ListNode {
  * Traverse the linked list and store the value in current node into the container
  * @param head The head node in the linked list
  */
-vector<ListNode*> listToVector(ListNode* head) {
-    vector<ListNode*> result;
+vector<ListNode *> listToVector(ListNode *head) {
+    vector<ListNode *> result;
     while (head) {
         result.push_back(head);
         head = head->next;
@@ -48,10 +48,10 @@ vector<ListNode*> listToVector(ListNode* head) {
  * Store the value in the container into a linked list
  * @param nodes The vector which store the value for the linked list
  */
-ListNode* vectorToList(const vector<ListNode*>& nodes) {
+ListNode *vectorToList(const vector<ListNode *> &nodes) {
     if (nodes.empty()) return nullptr;
-    ListNode* head = nodes[0];
-    ListNode* current = head;
+    ListNode *head = nodes[0];
+    ListNode *current = head;
     for (int i = 1; i < nodes.size(); i++) {
         current->next = nodes[i];
         current = current->next;
@@ -66,10 +66,10 @@ ListNode* vectorToList(const vector<ListNode*>& nodes) {
  * Vectorize the nodes, exchange node values and re-node the vectors
  * @param head The head node in the linked list
  */
-ListNode* swapNodesInPairs(ListNode* head) {
+ListNode *swapNodesInPairs(ListNode *head) {
     if (!head || !head->next) return head;
 
-    vector<ListNode*> nodes = listToVector(head);
+    vector<ListNode *> nodes = listToVector(head);
 
     for (int i = 0; i + 2 < nodes.size(); i += 3) {
         swap(nodes[i], nodes[i + 2]);
@@ -84,9 +84,9 @@ ListNode* swapNodesInPairs(ListNode* head) {
  * Traverse the linked list and point the head node to empty
  * @param head The head node in the linked list
  */
-void deleteList(ListNode* head) {
+void deleteList(ListNode *head) {
     while (head) {
-        ListNode* temp = head;
+        ListNode *temp = head;
         head = head->next;
         delete temp;
     }
@@ -94,12 +94,12 @@ void deleteList(ListNode* head) {
 
 int main() {
     // Initial linked list
-    ListNode* head = nullptr;
-    ListNode* current = nullptr;
+    ListNode *head = nullptr;
+    ListNode *current = nullptr;
     int val;
     // Read input and store in linked list
     while (cin >> val && val != -1) {
-        auto* newNode = new ListNode(val);
+        auto *newNode = new ListNode(val);
         if (!head) {
             head = newNode;
             current = head;
