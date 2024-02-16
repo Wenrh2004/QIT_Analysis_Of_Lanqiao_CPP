@@ -9,8 +9,8 @@
 - [ ] 005
 - [ ] 006
 - [ ] 007
-- [ ] 008
-- [ ] 009
+- [x] 008 [Largest Rectangle Area](topics/008/largest_rectangle_area_stack.cpp)
+- [ ] 009 
 - [x] 010 [Reverse linked list](topics/010/reverse_linked_list.cpp)
 
 ---
@@ -23,7 +23,7 @@
 - [ ] 005
 - [ ] 006
 - [ ] 007
-- [ ] 008
+- [x] 008 [Largest Rectangle Area](topics/008/largest_rectangle_area.md)
 - [ ] 009
 - [x] 010 [Reverse linked list](topics/010/reverse_linked_list.md)
 
