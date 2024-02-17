@@ -44,3 +44,7 @@
 - **计算最大矩形面积**
   - 创建一个 `stack`， 遍历 `heights` 的索引将 `height` 存入栈
   - 如果当前 `height` 小于栈顶元素的 `height`，将当前栈顶元素弹出，将当前 `height` 压入栈，得到当前最大面积即可
+
+## [example](./largest_rectangle_area_stack.cpp)
+
+## [explainer video](https://www.bilibili.com/video/BV1fz421R7QD/?vd_source=7653e6d91a76b6d1facaa378459d564f)
